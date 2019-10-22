@@ -1,0 +1,162 @@
+
+#big-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+#plot-container {
+	width: 500px;
+	height: 500px;
+	margin-top: 100px;
+}
+
+.background path {
+	fill: none;
+	stroke: none;
+	stroke-width: 1.5px;
+	pointer-events: stroke;
+}
+
+.foreground path {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+}
+
+.solid {
+	stroke: solid;
+}
+
+.dashed {
+	stroke: solid;
+	/*stroke-dasharray: 5,5;*/
+}
+
+.axis .title {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.axis line,
+.axis path {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.axis .string {
+	font-size: 6px;
+}
+
+.label {
+	-webkit-transition: fill 125ms linear;
+}
+
+.labelsText {
+	/** ordinal labels **/
+	font-size: 10px;
+}
+
+.active .label:not(.inactive) {
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.label.inactive {
+	fill: #ccc;
+}
+
+.foreground path.inactive {
+	stroke: #ccc;
+	stroke-opacity: 0.5;
+	stroke-width: 1px;
+}
+
+#target {
+	width: 100%;
+	height: 1%;
+	margin-top: 0%;
+	position: fixed;
+	z-index: 999;
+}
+
+#scroll-container {
+	height: 100%;
+	overflow: scroll;
+	background: white;
+	z-index: 999;
+}
+
+
+#scroll-intro {
+	height: 100vh;	/** takes up height of viewport **/
+}
+
+#scroll-intro h1 {
+	padding-top: 30vh;
+	text-align: center;
+}
+
+#scroll-intro p {
+	text-align: center;
+	margin-top: 5em;
+}
+
+.scroll-block {
+	height: 100vh;
+}
+
+.scroll-name, .scroll-text {
+	color: #a0a0a0;
+}
+
+.fa {
+	/** down arrow icon **/
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	font-size: 24px;
+}
+
+.active-text {
+	color: black;
+}
+
+
+#agency-instruction-heading {
+	padding-bottom: 2em;
+}
+
+#dropdown-container {
+	width: 100%;
+	margin-bottom: 70%;
+	z-index: 999;
+}
+
+#agencies-dropdown {
+	height: 40px;
+}
+
+#data-source-block {
+	font-size: 10px;
+	font-style: italic;
+}
+
+div.tooltip {
+	position: absolute;
+	text-align: center;
+	width: 300px;
+	height: 108px;
+	padding: 2px;
+	font: 12px sans-serif;
+	background: white;
+	border: 1px solid gray;
+	border-radius: 8px;
+	pointer-events: none;
+}
+

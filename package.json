@@ -1,0 +1,23 @@
+{
+  "name": "trump-ties",
+  "version": "1.0.0",
+  "description": "This is the code for the web app \"Visualizing Trump's Swamp.\" [Click here](http://pictograf.org/visualizing-trump-swamp/) to visit.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hnryzhng/trump-ties.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hnryzhng/trump-ties/issues"
+  },
+  "homepage": "https://github.com/hnryzhng/trump-ties#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

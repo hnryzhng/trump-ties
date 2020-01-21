@@ -1,6 +1,6 @@
 # Visualizing business and political ties of Trump staffers #
 
-This is the code for the web app "Visualizing Trump's Swamp." [Click here](http://pictograf.org/visualizing-trump-swamp/) to visit.
+This is the code for the web app "Visualizing Trump Staffers' Corporate and Political Ties." [Click here](https://trump-ties.herokuapp.com/) to visit.
 
 To illustrate the many potential conflicts of interests that political appointees in U.S. President Donald Trump's administration may have, I used a parallel coordinates plot to show their connections to businesses and lobbying firms. 
 

@@ -7,8 +7,14 @@ var path = require('path');
 var bodyParser = require('body-parser');	// for parsing body of POST request
 var fs = require('fs');
 
+// ping Heroku
+// prevent from sleeping in free tier
+const pingHeroku = require(path.join(__dirname, "/ping-heroku.js"));
+pingHeroku("https://trump-ties.herokuapp.com/", 1799000);	// every 1799 seconds, or almost 30 minutes (1800 sec)
+
 // initialize app object
 var app = express();
+
 
 // parses body for post request processing
 app.use(bodyParser.urlencoded({ extended: false }));	// parse application/x-www-form-urlencoded
